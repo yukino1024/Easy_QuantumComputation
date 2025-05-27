@@ -27,7 +27,7 @@ class ci_coo:
             return
         for i in self.all_occ:
             s = self.all_occ[i]
-            s.sort(key=lambda x: x[1], reverse=True)
+            s.sort(key=lambda x: float(x[1]), reverse=True)
             self.occ_data[i] = s[0][0]
 
     #读取ci根的所有占据

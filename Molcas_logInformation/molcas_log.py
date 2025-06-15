@@ -17,5 +17,5 @@ def do_write(log_adress):
     w = wri_excel()
     for i in range(1, r.get_num + 1):
         w.add_data(i, r.get(i), p.get(i), o.get(i), c.get(i))
-        w.wri_data()
-        w.save_excel(excel_adress)
+    w.wri_data()
+    w.save_excel(excel_adress)

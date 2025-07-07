@@ -1,0 +1,24 @@
+#!/bin/bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHON=python3
+G2EXC="$SCRIPT_DIR/Cords_for_g2excel/DoExcel.py"
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <filename.log>"
+    exit 1
+fi
+
+log_file="$(realpath "$1")"
+if [ ! -f "$log_file" ]; then
+    echo "Error: File '$log_file' not found"
+    exit 1
+fi
+
+$PYTHON "$G2EXC" "$log_file"
+
+if [ $? -eq 0 ]; then
+    echo "Successfully generated Excel file: ${log_file%.*}.xlsx"
+else
+    echo "Error: Failed to process file '$log_file'"
+    exit 1
+fi

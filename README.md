@@ -1,7 +1,7 @@
-# 量子化学计算辅助脚本
+# Some little projects which help your quantum computation
 
-Molcas_logInformation:读取Molcas激发态计算（RASSCF//CASPT2）数据并写入Excel中
+Molcas_logInformation:Give the overall data of your CASSCF//CAPT2 calculation in molcas.
 
-Gaussian_Input:Gaussian .in文件创建，支持选择计算方法与类型（完善中）
+Gaussian_Input:Generating .in files for Gaussian in Linux.( Unreleased version)
 
-遇到问题再写新脚本吧... @_@
+Laziness makes things easy.  @_@

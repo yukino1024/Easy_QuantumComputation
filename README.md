@@ -4,4 +4,3 @@ Molcas_log2excel:Give the overall data of your CASSCF//CASPT2 calculations in mo
 
 Gaussian_Input:Generating .in files for Gaussian in Linux.( Unreleased version)
 
-Laziness makes things easy.  @_@
